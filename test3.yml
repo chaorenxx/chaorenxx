@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/chaorenxx/chaorenxx.git
+          username: chaorenxx
+          password: Lk@666666
+#          search-paths: /** #默认只读取根目录下的文件，加上该配置则扫描路径下的文件和根目录下的文件
+          force-pull: true
+  application:
+    name: configServer
+server:
+  port: 9090
